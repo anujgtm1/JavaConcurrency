@@ -2,10 +2,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-class Processor implements Runnable {
+class ProcessorForThreadPool implements Runnable {
     private int id;
 
-    Processor(int id) {
+    ProcessorForThreadPool(int id) {
         this.id = id;
     }
 
@@ -26,7 +26,7 @@ public class ThreadPools {
         ExecutorService executor = Executors.newFixedThreadPool(4);
 
         for (int i = 0; i < 10; i++) {
-            executor.submit(new Processor(i));
+            executor.submit(new ProcessorForThreadPool(i));
         }
 
         executor.shutdown();
