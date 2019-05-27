@@ -1,3 +1,5 @@
+package threads;
+
 import java.util.Date;
 
 class ThreadRunner extends Thread {

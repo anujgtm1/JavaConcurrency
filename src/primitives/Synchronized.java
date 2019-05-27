@@ -1,3 +1,4 @@
+package primitives;
 
 public class Synchronized {
     private int count = 0;

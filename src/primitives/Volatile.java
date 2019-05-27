@@ -1,3 +1,5 @@
+package primitives;
+
 import java.util.Scanner;
 
 class Runner extends Thread {
